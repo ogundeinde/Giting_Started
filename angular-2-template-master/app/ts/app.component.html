@@ -1,0 +1,22 @@
+<h1>My Angular 2.2</h1>
+<h2>{{mainHeading}}</h2>
+<div [style.color]="applyred? 'red': 'blue'">Apply Red</div>
+<div [class.myClass]="applyblue">Apply Blue</div> 
+<button (click) ="onClick()">Click Me</button><br>
+<input type="text" #list>
+<button (click) ="onClick(list.value)">Try Me</button><br>
+<input type="text" [(ngModel)]="fname">
+<input type="text" [(ngModel)]="lname">
+Fullname: {{fname}} {{lname }}
+<playlist [vid]="videos">Loading...</playlist>
+<form>
+    <h2>User Details</h2>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="Hi">
+    </div>
+</form>
+<employee-list></employee-list>
+
+
+ 

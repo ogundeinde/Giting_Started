@@ -1,0 +1,19 @@
+<h1>My video playlist goes here</h1>
+<table class="table table-hover">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>VideoCode</td>
+                <td>Desc</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="#item of vid">
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.videoCode}}</td>
+                <td>{{item.desc}}</td>
+            </tr>
+        </tbody>
+</table>
